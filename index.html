@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <span class="ml-3 text-xl">StepStyle</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-black-900 font-medium text-red-500">News</a>
+      <a class="mr-5 hover:text-gray-900 font-medium">Men</a>
+      <a class="mr-5 hover:text-gray-900 font-medium">Women</a>
+      <a class="mr-5 hover:text-gray-900 font-medium">Contact</a>
+    </nav>
+    <div class="icons">
+        <div class="icon">
+            <i class="fa fa-search px-2" aria-hidden="true"></i>
+            <i class="fa fa-heart-o px-2" aria-hidden="true"></i>
+            <i class="fa fa-lock px-2" aria-hidden="true"></i>
+            <i class="fa fa-user-o px-2" aria-hidden="true"></i>
+        </div>
+    </div>
+    <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button> -->
+  </div>
+</header>
+  <section class="relative w-full max-w-6.5xl mx-auto px-4 py-12 bg-gray-100 ">
+    
+    <!-- Arrows -->
+    <button class="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl text-black hover:text-red-500 z-10">
+      &#10094;
+    </button>
+    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-3xl text-black hover:text-red-500 z-10">
+      &#10095;
+    </button>
+
+    <!-- Main content -->
+    <div class="relative flex items-center justify-center w-full">
+      <!-- Text Left -->
+      <div class="absolute left-0 md:left-10 text-center md:text-left w-[94%]">
+        <h2 class="text-3xl md:text-5xl font-bold">
+          DIS<span class="text-red-500">CO</span>VER
+        </h2>
+      </div>
+
+      <!-- Shoe Image Centered -->
+      <img src="images/bagck.png" alt="Sneaker" class="w-72 md:w-[400px] object-contain z-0" />
+
+      <!-- Text Right -->
+      <div class="absolute right-0 md:right-10 bottom-1 text-center md:text-right">
+        <h2 class="text-3xl md:text-5xl font-bold">
+          THE <span class="text-red-500">RIGHT</span> STYLE
+        </h2>
+      </div>
+    </div>
+
+  </section>
+  <section class="bg-white w-full py-12 px-4">
+  <div class="max-w-7xl mx-auto max-w-4xl flex flex-col items-center gap-6">
+    
+    <!-- Dots -->
+    <div class="flex gap-2 mb-2">
+      <span class="w-2.5 h-2.5 bg-black "></span>
+      <span class="w-2.5 h-2.5 bg-gray-300 "></span>
+      <span class="w-2.5 h-2.5 bg-gray-300 "></span>
+      <span class="w-2.5 h-2.5 bg-gray-300 "></span>
+    </div>
+
+    <!-- Shop Now Button -->
+    <button class="bg-red-600 hover:bg-red-700 text-white font-semibold mb-2 px-6 py-3 transition">
+      Shop Now
+    </button>
+
+    <!-- Features Grid -->
+    <div class="w-[94%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 text-center">
+      
+      <!-- Feature 1 -->
+      <div class="bg-gray-100 p-6 shadow-sm hover:shadow-md transition">
+        <div class="text-4xl mb-4"><i class="fa fa-bus"></i></div>
+        <p class="text-gray-700 font-medium p-3">Free shipping over $250</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-gray-100 p-6 shadow-sm hover:shadow-md transition">
+        <div class="text-4xl mb-4"><i class="fa fa-undo"></i></div>
+        <p class="text-gray-700 font-medium p-3">Free return 50 days</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-gray-100 p-6 shadow-sm hover:shadow-md transition">
+        <div class="text-4xl mb-4"><i class="fa fa-envelope"></i></div>
+        <p class="text-gray-700 font-medium p-3">10% if you subscribe</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-gray-100 p-6 shadow-sm hover:shadow-md transition h-40">
+        <div class="text-4xl mb-4"><i class="fa fa-lock"></i></div>
+        <p class="text-gray-700 font-medium p-3">Secure payment</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-white py-12 px-4">
+  <div class="max-w-7xl mx-auto w-[91%]">
+    <!-- Title -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">DISCOVER THE NEWS</h2>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-white shadow-xl overflow-hidden group">
+        <div class="relative">
+          <img src="images/bu6.jpg" alt="Nike Air Yellow" class="w-full h-64 object-cover">
+          <div class="absolute bottom-2 right-2 text-white p-1">
+            <i class="fa fa-heart-o px-2" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="p-4 flex justify-between items-center">
+          <span class="font-medium">Nike Air Yellow</span>
+          <span class="font-semibold">599$</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white shadow-xl overflow-hidden group">
+        <div class="relative">
+          <img src="images/bu3.jpg" alt="Nike Air Force" class="w-full h-64 object-cover">
+          <div class="absolute bottom-2 right-2 text-white p-1">
+            <i class="fa fa-heart-o px-2" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="p-4 flex justify-between items-center">
+          <span class="font-medium">Nike Air Force</span>
+          <span class="font-semibold">789$</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white shadow-xl overflow-hidden group">
+        <div class="relative">
+          <img src="images/bu4.jpg" alt="Adidas Air Max" class="w-full h-64 object-cover">
+          <div class="absolute bottom-2 right-2 text-white p-1">
+            <i class="fa fa-heart-o px-2" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="p-4 flex justify-between items-center">
+          <span class="font-medium">Adidas Air Max</span>
+          <span class="font-semibold">399$</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white shadow-xl rounded overflow-hidden group">
+        <div class="relative">
+          <img src="images/bu5.jpg" alt="Nike Air Black" class="w-full h-64 object-cover">
+          <div class="absolute bottom-2 right-2 text-white p-1">
+            <i class="fa fa-heart-o px-2" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="p-4 flex justify-between items-center">
+          <span class="font-medium">Nike Air Black</span>
+          <span class="font-semibold">239$</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="bg-white py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-center text-3xl font-bold text-gray-800 mb-8">TOP BRANDS</h2>
+    <div class="relative">
+      <div class="flex items-center justify-between overflow-hidden">
+        <button class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <div class="flex flex-grow justify-around items-center space-x-8 px-4">
+          <img src="images/nike logo.png" alt="Nike Logo" class="h-30 object-contain filter  hover:grayscale-0 transition-all duration-300 opacity-50">
+          <img src="images/timberland logo.png" alt="Timberland Logo" class="h-35 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-50">
+          <img src="images/new balance logo.png" alt="New Balance Logo" class="h-35 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-50">
+          <img src="images/Reebok logo.png" alt="Reebok Logo" class="h-30 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-50">
+          <img src="images/puma logo.png" alt="Puma Logo" class="h-30 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-50">
+          <img src="images/skechers.png" alt="Skechers Logo" class="h-30 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-50">
+        </div>
+        <button class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+      </div>
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-4 flex items-center justify-center space-x-2">
+        <div class="h-1 w-8 bg-red-500 rounded-full"></div>
+        <div class="h-1 w-8 bg-gray-300 rounded-full"></div>
+        <div class="h-1 w-8 bg-gray-300 rounded-full"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <section class="max-w-7xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">OUR CATEGORIES</h2>
+
+    <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+      <!-- Left side (Stiletto) -->
+      <div class="w-full lg:w-1/4">
+        <div class="relative h-full">
+          <img src="images/wb2.jpg" alt="Stiletto" class="w-full h-full object-cover rounded-md">
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-3 py-1 rounded">Stiletto</div>
+        </div>
+      </div>
+
+      <!-- Center Grid (4 images) -->
+      <div class="w-full lg:w-2/4 grid grid-cols-2 gap-4">
+        <!-- Half shoes -->
+        <div class="relative  h-64 w-72 aspect-[3/4]">
+          <img src="images/wsh1.jpg" alt="Half shoes" class="w-full h-full object-cover rounded-md">
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-3 py-1 rounded">Half shoes</div>
+        </div>
+        <!-- Pool flip-flops -->
+        <div class="relative h-64 w-72 aspect-[3/4]">
+          <img src="images/wb3.jpg" alt="Pool flip-flops" class="w-full h-full object-cover rounded-md">
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-3 py-1 rounded">Pool flip-flops</div>
+        </div>
+        <!-- Sandals -->
+        <div class="relative h-64 w-72 aspect-[3/4]">
+          <img src="images/sandle.jpg" alt="Sandals" class="w-full h-full object-cover rounded-md">
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-3 py-1 rounded">Sandals</div>
+        </div>
+        <!-- Sport shoes -->
+        <div class="relative h-64 w-72 aspect-[3/4]">
+          <img src="images/sport.jpg" alt="Sport shoes" class="w-full h-full object-cover rounded-md">
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-3 py-1 rounded">Sport shoes</div>
+        </div>
+      </div>
+
+      <!-- Right side (Boots) -->
+      <div class="w-full lg:w-1/4">
+        <div class="relative h-full">
+          <img src="images/wb1.jpg" alt="Boots" class="w-full h-full object-cover object-center rounded-md">
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-3 py-1 rounded">Boots</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative max-w-6xl mb-12 mx-auto w-full">
+  <!-- Left arrow -->
+  <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 p-2 rounded-full shadow z-10">
+    <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <!-- Banner Image -->
+  <div class="relative h-[300px] md:h-[350px] overflow-hidden ">
+    <img src="images/bu3.jpg" alt="Shoe Sale" class="w-full h-full object-cover"/>
+
+    <!-- Left Text -->
+    <div class="absolute top-1/2 left-6 -translate-y-1/2 text-white">
+      <h2 class="text-xl md:text-3xl font-bold leading-snug">
+        BIGGEST <span class="text-red-600">SALES</span><br>
+        <span class="text-sm md:text-lg font-normal">OF THE YEAR</span>
+      </h2>
+    </div>
+
+    <!-- Right Text -->
+    <div class="absolute bottom-4 right-6 text-right text-white">
+      <p class="text-sm md:text-xl font-semibold leading-tight">
+        EPIC SALE<br>
+        <span class="text-red-600 text-lg md:text-2xl font-bold">50%</span> 
+        <span class="text-lg text-3xl md:text-2xl font-bold">DISCOUNT</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Right arrow -->
+  <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 p-2 rounded-full shadow z-10">
+    <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+</section>
+<!-- Newsletter Section -->
+<section class=" relative mx-auto bg-gray-100 py-10 px-4 max-w-7xl w-full">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-2">NEWSLETTER</h2>
+    <p class="mb-6 text-gray-900 font-medium">
+      Get information about news and promotions. Get a 10% discount <br class="hidden sm:block" />
+      if you subscribe to the newsletter
+    </p>
+
+    <form class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+      <input type="email" placeholder="Email" class="w-full sm:flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none" />
+      <button type="submit" class="bg-red-500 text-white px-6 py-2 hover:bg-red-600">SUBSCRIBE</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-black text-white py-10 px-4">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left items-start">
+    
+    <!-- Payment Methods -->
+    <div>
+      <h3 class="font-semibold mb-3">Pay methods</h3>
+      <div class="flex justify-center md:justify-start gap-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" class="h-6">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="h-6">
+      </div>
+    </div>
+
+    <!-- Links and Contact -->
+    <div>
+      <h3 class="font-bold text-xl mb-2">StepStyle</h3>
+      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 text-gray-300 mb-4">
+        <a href="#">News</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="text-sm">
+        <p class="flex items-center justify-center md:justify-start gap-2 mb-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 12H8m0 0l4-4m-4 4l4 4" />
+          </svg>
+          contact@stepstyle.com
+        </p>
+        <p class="flex items-center justify-center md:justify-start gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10l1-2m0 0l4-2 2-1 1-3 3 3 1 1 1 2 2 4 2 1-1 3-2 1-1 1-1 1-1 1-3 1-3-3-1-1-1-1-2-2-1-3z" />
+          </svg>
+          +407.65.548.753
+        </p>
+      </div>
+    </div>
+
+    <!-- Social Media -->
+    <div class="text-center md:text-right">
+      <h3 class="font-semibold mb-3">Social media</h3>
+      <div class="flex justify-center md:justify-end gap-4">
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" class="h-5" alt="Instagram"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" class="h-5" alt="Facebook"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png" class="h-5" alt="Twitter"/></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom copyright -->
+  <div class="text-center text-sm text-gray-400 mt-8">
+    © Copyright. All rights reserved. StepStyle©2025
+  </div>
+</footer>
+
+</body>
+</html>
